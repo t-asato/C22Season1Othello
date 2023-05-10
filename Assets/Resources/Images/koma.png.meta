@@ -101,6 +101,45 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
+=======
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+>>>>>>> 30f5ac8beac951dbdcd152df31004614fed51e90
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -125,6 +164,7 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+<<<<<<< HEAD
     - serializedVersion: 2
       name: koma_1
       rect:
@@ -171,6 +211,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 9fb5adb9aab223b47b2e79a7ebdbc98f
+=======
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+>>>>>>> 30f5ac8beac951dbdcd152df31004614fed51e90
     internalID: 0
     vertices: []
     indices: 
@@ -178,9 +224,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       koma_0: 1636821637
       koma_1: -1636960375
       koma_2: 1595962259
+=======
+      koma_0: 16566069166505404
+>>>>>>> 30f5ac8beac951dbdcd152df31004614fed51e90
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
