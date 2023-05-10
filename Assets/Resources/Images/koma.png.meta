@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1074b22b2151af4e81fd390a256c065
-      internalID: 1636821637
+      spriteID: 1299c0046aef50540baf5ac53f4c9aae
+      internalID: 1247899712
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5d3ecf4967dc404dbb6951b5882b7b5
-      internalID: -1636960375
+      spriteID: 93a45edc94d6dda46897c3dc32ec0d0f
+      internalID: -1535919
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 602ae9baa671a644bbfceedc0b3aa826
-      internalID: 1595962259
+      spriteID: 470c92340a0f11646815d0fde8ec362c
+      internalID: -1651832124
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9fb5adb9aab223b47b2e79a7ebdbc98f
+    spriteID: 2da251bc4233b2142956ef322f1ddbd4
     internalID: 0
     vertices: []
     indices: 
@@ -178,9 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      koma_0: 1636821637
-      koma_1: -1636960375
-      koma_2: 1595962259
+      koma_0: 1247899712
+      koma_1: -1535919
+      koma_2: -1651832124
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
