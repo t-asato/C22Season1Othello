@@ -101,6 +101,42 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -119,8 +155,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: c4d07f052903c904aadc7cfdd180bdfb
       internalID: -137445967
+=======
+      spriteID: d0e2ad1e4dabeca4aabf5ad87927e141
+      internalID: 1136463168
+>>>>>>> C22Season1Othello/main
       vertices: []
       indices: 
       edges: []
@@ -140,8 +181,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 08c9737a9d5b46e488d7f6385ec473b5
       internalID: 271474252
+=======
+      spriteID: 3e2423111d9cf1c4b8ff3f4cc8d7d935
+      internalID: -1440759459
+>>>>>>> C22Season1Othello/main
       vertices: []
       indices: 
       edges: []
@@ -161,8 +207,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: f76c7c550f9ad8f4db5f56799c52dee7
       internalID: -755055717
+=======
+      spriteID: 2ada1775609753c4d823792a466b6ba9
+      internalID: 76024425
+>>>>>>> C22Season1Othello/main
       vertices: []
       indices: 
       edges: []
@@ -170,7 +221,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 44b9aca5398451845b438cd268282d71
+=======
+    spriteID: 124fb34ee17b60243803f7f80da5611a
+>>>>>>> C22Season1Othello/main
     internalID: 0
     vertices: []
     indices: 
@@ -178,9 +233,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       koma_0: -137445967
       koma_1: 271474252
       koma_2: -755055717
+=======
+      koma_0: 1136463168
+      koma_1: -1440759459
+      koma_2: 76024425
+>>>>>>> C22Season1Othello/main
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
