@@ -9,6 +9,9 @@ public class OthelloMainScriptAST : MonoBehaviour
     public GameObject komaOBJ;
     SpriteRenderer komaSprite;
 
+    
+    
+
     void Start()
     {
         koma = Resources.LoadAll<Sprite>("Images/koma");
@@ -16,16 +19,9 @@ public class OthelloMainScriptAST : MonoBehaviour
         komaSprite = komaOBJ.GetComponent<SpriteRenderer>();
         komaSprite.sprite = koma[0];
 
-        Instantiate(
-            komaOBJ,
-            new Vector3(0, 0, 0),
-            Quaternion.identity
-            );
-
         boardUpdate();
 
         
-
     }
 
     void Update()
@@ -34,12 +30,20 @@ public class OthelloMainScriptAST : MonoBehaviour
     }
     void boardUpdate()
     {
-        for (int y = 0; y <= 9; y++)
+        for (int y = 1; y <= 8; y++)
         {
             string CSVline = "";
-            for (int x = 0; x <= 9; x++)
+            for (int x = 1; x <= 8; x++)
             {
                 CSVline = CSVline + boardCSV.csvDatas[y][x] + ",";
+                komaSprite.sprite = koma[int.Parse(boardCSV.csvDatas[y][x])];
+
+        Instantiate(
+            komaOBJ,
+            new Vector3((x*0.7f)-5.6f, (y*-0.7f)+3f, 0),
+            Quaternion.identity
+            );
+
             }
             Debug.Log(CSVline);
         }
