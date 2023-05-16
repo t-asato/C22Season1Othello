@@ -9,7 +9,7 @@ public class OthelloMainScriptAST : MonoBehaviour
     public GameObject komaOBJ;
     SpriteRenderer komaSprite;
 
-    
+    public CursorScript CursorScript;
     
 
     void Start()
