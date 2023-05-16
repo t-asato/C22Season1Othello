@@ -9,10 +9,6 @@ public class CursorScript : MonoBehaviour
 
     public float posX = 0;
     public float posY = 0;
-    void Start()
-    {
-
-    }
 
     void Update()
     {
@@ -48,9 +44,5 @@ public class CursorScript : MonoBehaviour
         countFlag = true;
         transform.position
         = new Vector3((inputX * 0.7f) - 4.9f, (inputY * -0.7f) + 2.3f, -1);
-
     }
-
-
-
 }
