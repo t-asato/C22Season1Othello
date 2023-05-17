@@ -10,7 +10,7 @@ public class OthelloMainScriptAST : MonoBehaviour
     SpriteRenderer komaSprite;
 
     public CursorScript CursorScript;
-    
+
     void Start()
     {
         koma = Resources.LoadAll<Sprite>("Images/koma");
@@ -23,6 +23,11 @@ public class OthelloMainScriptAST : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetButtonDown("Jump"))
+        {
+            komaPut();
+        }
+
 
     }
     void boardUpdate()
@@ -35,13 +40,36 @@ public class OthelloMainScriptAST : MonoBehaviour
                 CSVline = CSVline + boardCSV.csvDatas[y][x] + ",";
                 komaSprite.sprite = koma[int.Parse(boardCSV.csvDatas[y][x])];
 
-        Instantiate(
-            komaOBJ,
-            new Vector3((x*0.7f)-5.6f, (y*-0.7f)+3f, 0),
-            Quaternion.identity
-            );
+                Instantiate(
+                    komaOBJ,
+                    new Vector3((x * 0.7f) - 5.6f, (y * -0.7f) + 3f, 0),
+                    Quaternion.identity
+                    );
             }
             //Debug.Log(CSVline);
         }
     }
+    void komaPut()
+    {
+        int CursorX = (int)CursorScript.posX + 1;
+        int CursorY = (int)CursorScript.posY + 1;
+
+        if (boardCSV.csvDatas[CursorY][CursorX] == "0")
+        {
+            //boardCSV.csvDatas[CursorY][CursorX] = "1";
+            komaCheck();
+        }
+        boardUpdate();
+    }
+
+    void komaCheck()
+    {
+
+
+
+    }
+
+
+
+
 }
