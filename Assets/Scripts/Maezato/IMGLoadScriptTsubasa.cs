@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KomineScript : MonoBehaviour
+public class IMGLoadScriptTsubasa : MonoBehaviour
 {
-    
+    public Sprite[] koma;
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        koma = Resources.LoadAll<Sprite>("Images/koma");
     }
 
-    // Update is called once per frame
     void Update()
     {
         
