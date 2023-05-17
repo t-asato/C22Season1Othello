@@ -15,7 +15,7 @@ public class CursorScript : MonoBehaviour
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = -1 * Input.GetAxisRaw("Vertical");
 
-        Debug.Log(posX + ":" + posY);
+        //Debug.Log(posX + ":" + posY);
 
         if (inputX + inputY != 0 && !countFlag)
         {

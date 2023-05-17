@@ -153,6 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c95ca8e9d1958634aa7dcac2d52eb35c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  posX: 0
+  posY: 0
 --- !u!212 &66385778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -440,6 +442,7 @@ MonoBehaviour:
   boardCSV: {fileID: 1363194670}
   koma: []
   komaOBJ: {fileID: 5091363236406894282, guid: 30351e57c11c234409e51e074c655083, type: 3}
+  CursorScript: {fileID: 66385777}
 --- !u!1 &1582957610
 GameObject:
   m_ObjectHideFlags: 0

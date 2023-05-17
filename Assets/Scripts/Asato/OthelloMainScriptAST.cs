@@ -11,7 +11,6 @@ public class OthelloMainScriptAST : MonoBehaviour
 
     public CursorScript CursorScript;
     
-
     void Start()
     {
         koma = Resources.LoadAll<Sprite>("Images/koma");
@@ -20,8 +19,6 @@ public class OthelloMainScriptAST : MonoBehaviour
         komaSprite.sprite = koma[0];
 
         boardUpdate();
-
-        
     }
 
     void Update()
@@ -43,9 +40,8 @@ public class OthelloMainScriptAST : MonoBehaviour
             new Vector3((x*0.7f)-5.6f, (y*-0.7f)+3f, 0),
             Quaternion.identity
             );
-
             }
-            Debug.Log(CSVline);
+            //Debug.Log(CSVline);
         }
     }
 }
