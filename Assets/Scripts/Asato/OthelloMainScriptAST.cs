@@ -9,10 +9,16 @@ public class OthelloMainScriptAST : MonoBehaviour
     public GameObject komaOBJ;
     SpriteRenderer komaSprite;
 
+    public Transform BoradParent;
+
     public CursorScript CursorScript;
 
+    int CursorX;
+    int CursorY;
     void Start()
     {
+
+
         koma = Resources.LoadAll<Sprite>("Images/koma");
 
         komaSprite = komaOBJ.GetComponent<SpriteRenderer>();
@@ -25,6 +31,8 @@ public class OthelloMainScriptAST : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
+            CursorX = (int)CursorScript.posX + 1;
+            CursorY = (int)CursorScript.posY + 1;
             komaPut();
         }
 
@@ -32,6 +40,11 @@ public class OthelloMainScriptAST : MonoBehaviour
     }
     void boardUpdate()
     {
+        foreach (Transform borad in BoradParent)
+        {
+            GameObject.Destroy(borad.gameObject);
+        }
+
         for (int y = 1; y <= 8; y++)
         {
             string CSVline = "";
@@ -44,6 +57,7 @@ public class OthelloMainScriptAST : MonoBehaviour
                     komaOBJ,
                     new Vector3((x * 0.7f) - 5.6f, (y * -0.7f) + 3f, 0),
                     Quaternion.identity
+                    , BoradParent
                     );
             }
             //Debug.Log(CSVline);
@@ -51,9 +65,6 @@ public class OthelloMainScriptAST : MonoBehaviour
     }
     void komaPut()
     {
-        int CursorX = (int)CursorScript.posX + 1;
-        int CursorY = (int)CursorScript.posY + 1;
-
         if (boardCSV.csvDatas[CursorY][CursorX] == "0")
         {
             //boardCSV.csvDatas[CursorY][CursorX] = "1";
@@ -65,6 +76,33 @@ public class OthelloMainScriptAST : MonoBehaviour
     void komaCheck()
     {
 
+
+        for (int checkY = -1; checkY <= 1; checkY++)
+        {
+            for (int checkX = -1; checkX <= 1; checkX++)
+            {
+                if (boardCSV.csvDatas[CursorY + checkY][CursorX + checkX] == "2")
+                {
+                    //Debug.Log("ok");
+                    int loopX = CursorX + checkX;
+                    int loopY = CursorY + checkY;
+                    while (boardCSV.csvDatas[loopY][loopX] == "2")
+                    {
+                        loopX += checkX;
+                        loopY += checkY;
+                    }
+                    if (boardCSV.csvDatas[loopY][loopX] == "1")
+                    {
+                        Debug.Log("ok");
+                    }
+                }
+                /*else
+                {
+                    Debug.Log(CursorX + ":" + CursorX + "=" + boardCSV.csvDatas[CursorY + checkY][CursorX + checkX] + "not");
+                }*/
+
+            }
+        }
 
 
     }
