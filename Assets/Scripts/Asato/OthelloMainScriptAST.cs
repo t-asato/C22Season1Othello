@@ -50,7 +50,7 @@ public class OthelloMainScriptAST : MonoBehaviour
     void Update()
     {
         wait += Time.deltaTime;
-        Debug.Log(wait);
+        //Debug.Log(wait);
         if (Input.GetButtonDown("Jump") && turn == 0)
         {
             Debug.Log("PC");
@@ -61,7 +61,7 @@ public class OthelloMainScriptAST : MonoBehaviour
         }
         if (turn == 1 && wait > 1)
         {//CPU
-            Debug.Log("CPU");
+            //Debug.Log("CPU");
             //Invoke("CPUkomaCheck", 1f);
             CPUkomaCheck();
             wait = 0;
